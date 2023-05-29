@@ -1,0 +1,18 @@
+dla s = 2, 3, ..., n wykonuj:
+    T[s] = prawda
+
+i = 2
+dopóki i <= pierwiastek(n) wykonuj:
+    jeżeli T[i] == prawda wykonaj:
+        j = i * i
+        dopóki j <= n wykonuj:
+            T[j] = fałsz
+            j = j + i
+    i = i + 1
+
+#Pętla wypisująca wszystkie liczby złożone
+#Pętla dla każdej liczby i z przedziału <2,n> sprawdza, czy wartość pola tej listy o indeksie i jest równa fałsz (liczba złożona), jeżeli tak - wypisuje tę liczbę i (indeks)
+
+dla i = 2, 3, ..., n wykonuj:
+    jeżeli T[i] == fałsz wykonaj:
+        wypisz(i)
